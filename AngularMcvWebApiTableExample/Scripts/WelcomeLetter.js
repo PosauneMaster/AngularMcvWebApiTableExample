@@ -1,0 +1,1 @@
+﻿var WelcomeLetter = angular.module('WelcomeLetter', ['ui.grid']);

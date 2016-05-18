@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html ng-app="WelcomeLetter">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Welcome Letter</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+    .gridStyle
+    {
+    border: 5px solid #d4d4d4;
+    width: 80%;
+    height: 600px;
+    }
+    </style>  
+
+
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/Angular")
+    @Scripts.Render("~/bundles/WelcomeLetter")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
